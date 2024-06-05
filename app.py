@@ -3,9 +3,6 @@ import pandas as pd
 
 st.set_page_config("Home", layout="wide")
 
-# Home and layout
-st.header("Home")
-
 # Ingest
 filename = "1.csv"
 df = pd.read_csv(f"Data/{filename}", sep=",")
@@ -120,5 +117,3 @@ with tab_raw_table:
         df,
         use_container_width=True
     )
-
-    st.write(str(df.columns))
